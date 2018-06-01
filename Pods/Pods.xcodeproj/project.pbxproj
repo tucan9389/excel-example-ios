@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025AC2374C0B9E07B24F51C9399D9DA7 /* Pods-excel-example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0589350C2D874DDC412955F9A69D86F3 /* Pods-excel-example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D630167C238DD85EC3A06E8D57E828E /* ioapi.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 5BC7CD9C0E831DE549D07CE9B7576551 /* ioapi.h */; };
+		0EAE2BA8AEB75ECCEAACA1B0E9759707 /* worksheet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9438CDC471170060DFD4B464F764B1EF /* worksheet.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		13481BC619EED18964B5364EEFA56DF7 /* app.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = EC2420049AB8DB2D94CAB94BDD8AFF4E /* app.h */; };
+		180D7D20028C3893652B4333FB7242BD /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = EA49E231C20DD01B1239B92AAE238E6F /* tree.h */; };
+		1C6D60E76CF1848EF1D99C4E055ECC97 /* queue.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 22DB319A0DED209EC0A62B2B12D338D7 /* queue.h */; };
+		1E64F359931B38313961BA46EB3BB8E6 /* packager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30F9A75D98F9809ECA33BC25DB4F567D /* packager.h */; };
+		221D43A596F7373EE86C73277BA8F2FD /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = DD97119C46629D999AF97277A8B95DDF /* utility.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		22BC9E544458D25465244D227010EE9B /* packager.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 30F9A75D98F9809ECA33BC25DB4F567D /* packager.h */; };
+		2524093E1C730FA455EB12209C49C9DC /* drawing.c in Sources */ = {isa = PBXBuildFile; fileRef = 664A8D4340021128673BCBD9DF397F4F /* drawing.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		26027D1A4640D69020A700EE7557248C /* drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = EA31ADEBF60878A9B58CF4EF0A8C61D2 /* drawing.h */; };
+		29A8DFC636C309DA92BB5AD05F07BD77 /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A6383B637A88C6F47C54CBA1D2EE4A /* format.h */; };
+		2E34567460FA8780A1D950CAB15EA12E /* shared_strings.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7119A704F86635FBAC984A3A345410 /* shared_strings.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		31FF8BFF607A00B3E596E149E49EC68F /* styles.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 4C15FCAA18EF3F74C6E02F35477DBA4C /* styles.h */; };
+		378D8BB6DE013BB177F4390DC5072BC8 /* custom.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 4178916E65A516231528B4FF9932E5CA /* custom.h */; };
+		49BB07D5C654A4ABAD65FAA2511C00C4 /* zip.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 5E2AF47E80E3D403EDC7164CA15EBCC9 /* zip.h */; };
+		4B543CEBAB72B942F256C692539FD41B /* chart.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F5800520AB4C7BF58D86F80365C451 /* chart.h */; };
+		507FF0C5F5B345F5A69BAEBB68ED222C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5172F613EB686A8784303D60B2703D84 /* tree.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = EA49E231C20DD01B1239B92AAE238E6F /* tree.h */; };
+		5418E46984326C34C0984DC7E6597F35 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E2AF47E80E3D403EDC7164CA15EBCC9 /* zip.h */; };
+		599B9DC261AE37EC6808F3B5D6620DBD /* workbook.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BAAC08848F58AE593C30B77C2983AB5 /* workbook.h */; };
+		59CE8EF1B0A4C6D1F71C34455E4CCC8B /* chart.c in Sources */ = {isa = PBXBuildFile; fileRef = F7A1BD09D0CCB915DDF3AE6E0741CCAE /* chart.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		5B1039365175A6FB659F325B20BAD734 /* hash_table.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 447E39D20159A8A05ACA7671B87B5203 /* hash_table.h */; };
+		6244F77B4007996D556193F575C0C70E /* libxlsxwriter-umbrella.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 5ECC16AEEBD27A80EC452644B2674647 /* libxlsxwriter-umbrella.h */; };
+		67638AC5AF48E4C312A6052232139CB2 /* relationships.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 42BF5659BB088053E3053286D84D59B5 /* relationships.h */; };
+		69E3BC25D8D5FD555531D820857C79BA /* Pods-excel-example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BB94CB257BAECFBD5DA39FDE4F89D4 /* Pods-excel-example-dummy.m */; };
+		6EED5467EBAE893CEACBC8D61AEED7A0 /* common.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 1DDBD2224EE95A74B97CB0A243ACDE74 /* common.h */; };
+		6FA2C1E036A421FD04F9EA969D9B042A /* styles.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C15FCAA18EF3F74C6E02F35477DBA4C /* styles.h */; };
+		70CD50132726F6B384C7ECA6AD9AE64C /* custom.c in Sources */ = {isa = PBXBuildFile; fileRef = 39336717E64C7198225331484179B2F2 /* custom.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		7109787531E472F725D2C8AE8164A2D9 /* format.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 49A6383B637A88C6F47C54CBA1D2EE4A /* format.h */; };
+		7280EC56EAA22A76AEAB9BA7A4632BFB /* chart.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 96F5800520AB4C7BF58D86F80365C451 /* chart.h */; };
+		72DE1FB728AB50C50E8F82F2ACB1BBB1 /* app.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2420049AB8DB2D94CAB94BDD8AFF4E /* app.h */; };
+		797420230B647544633D580B39F4DF0E /* format.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F5F9480D4AC8B292FD9CAE1D50836 /* format.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		7ADD0D1AF04F768CF76E052EAA15534A /* xlsxwriter.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 25CEB59336FD0A550AB6698A41414EA8 /* xlsxwriter.h */; };
+		7CF5353A4BFA6F500D93ED228FB2980F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7D999183A7D58BA9B34916C1CC6D1470 /* libxlsxwriter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E6850699DD326071227199B080776C /* libxlsxwriter-dummy.m */; };
+		7DDE9DD1B2D3046255BECB9DB2545913 /* styles.c in Sources */ = {isa = PBXBuildFile; fileRef = D35A50EAC2BB3C853F9F2524C06C7614 /* styles.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		8086BF30F5B1384198614A1F02AAA30C /* core.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 7B41E6109F83525E4CDE8C8C5E0AEEA8 /* core.h */; };
+		84EC6183B7C83F983B1F417400E15266 /* worksheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F04B6ACC2D5B8FDC21031DBC79689FF /* worksheet.h */; };
+		87741AF8F46EA32540C7CFABAA7C65D4 /* hash_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 447E39D20159A8A05ACA7671B87B5203 /* hash_table.h */; };
+		8A48192CF76BA18C5749A7A4A80423A1 /* relationships.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BF5659BB088053E3053286D84D59B5 /* relationships.h */; };
+		8CCFD1D24FE589878452B258C115A044 /* packager.c in Sources */ = {isa = PBXBuildFile; fileRef = 873D098EF47B426E70DDFCD5D83F99CC /* packager.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		8D1D75DBD90EE30EBCB969B84D439F0D /* relationships.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDF6CAE2BD4241ECB5C26F6EC9D823 /* relationships.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		983F45B7AD37BC2C12B0C6F0B5BC6511 /* xmlwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = A46E6DD53E41EDAD7EF448BFEDBFBA95 /* xmlwriter.h */; };
+		9890B37C93FE4638F8D420027D367EF1 /* drawing.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = EA31ADEBF60878A9B58CF4EF0A8C61D2 /* drawing.h */; };
+		A10407BB464FC8E79D42A0F54A3665FF /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = AD88CC4DC948919338D472BCEE350B30 /* core.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		A1335BC9415F952DF82B0876F7C216F5 /* theme.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D75DDC8434E072DB6662EAD5E827F5 /* theme.h */; };
+		A53019486B01BB3EA3A6E395A30C2478 /* libxlsxwriter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ECC16AEEBD27A80EC452644B2674647 /* libxlsxwriter-umbrella.h */; };
+		A5633915B1CC186CF8C6CADF6671F578 /* hash_table.c in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA51208ABB83B4419459E6CF91659C /* hash_table.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		A5CE8012E433971C404B401EDD9386EE /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B41E6109F83525E4CDE8C8C5E0AEEA8 /* core.h */; };
+		A6836CAB1FFB47AFC284E15EA6F002F6 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC7CD9C0E831DE549D07CE9B7576551 /* ioapi.h */; };
+		AA951872F3E5F9232E077A054C2F9617 /* tmpfileplus.c in Sources */ = {isa = PBXBuildFile; fileRef = 1217836A76EF2FB554D6B7F91C122A16 /* tmpfileplus.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		AB04388CB80FE5EEC012BF38BE267EC8 /* xlsxwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 25CEB59336FD0A550AB6698A41414EA8 /* xlsxwriter.h */; };
+		B82A2EF1B50420E8695AA4A9AEBFD0A6 /* content_types.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A57191FD85B1DFA26E772B26AD25EE1 /* content_types.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		B988339E5AB7FC57487285A8C75A72D0 /* content_types.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 08968D0F5F3D4A67CC355C69A21BA0A2 /* content_types.h */; };
+		BE2B61FACEDD47033FB4CC0309A6E000 /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BD7DE0A33215686F29ED3BA4C62CE9 /* app.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		C28981D488F0B4C7DA9022487617EA83 /* xmlwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = EF01B347539249BD1E78AF8033D87C80 /* xmlwriter.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		C9536F8432CEB9022AE5801066E39381 /* shared_strings.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC0647146CDB51BE79B9921E5B74727 /* shared_strings.h */; };
+		CE7CC960A5CD9E9BA3874651CD6CCD4F /* utility.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 1A4B059943DEF750CAC9F1D306067CA9 /* utility.h */; };
+		CE8E5F315EE21D83A30A8A7A91CA54E1 /* custom.h in Headers */ = {isa = PBXBuildFile; fileRef = 4178916E65A516231528B4FF9932E5CA /* custom.h */; };
+		CEFD2D9CAFC28B25FA878846E28BABF3 /* xmlwriter.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = A46E6DD53E41EDAD7EF448BFEDBFBA95 /* xmlwriter.h */; };
+		CF7AD08B9CC1E1217E4CA321FAD3A21F /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DDBD2224EE95A74B97CB0A243ACDE74 /* common.h */; };
+		D61E0F5FA3572D691F2A58055F67F9E5 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 221852BED20CA00F63F49E62D4344EE0 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		D722147E515EBBF629B34016D9CAECEF /* workbook.c in Sources */ = {isa = PBXBuildFile; fileRef = 18562408C8151FA8CCD218A90EFFA41C /* workbook.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		DCE141D561AE16449D2AE21FB7139C06 /* theme.c in Sources */ = {isa = PBXBuildFile; fileRef = 415C5E26C86FD7676687BBFA6E8C0FD8 /* theme.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		DFAFBD48BB98A3A1BC684A3348DAADEB /* content_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 08968D0F5F3D4A67CC355C69A21BA0A2 /* content_types.h */; };
+		E77A92224FED912D0BEAF5924204ECA6 /* worksheet.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 7F04B6ACC2D5B8FDC21031DBC79689FF /* worksheet.h */; };
+		ECB9D1CC4EF9847CEA56ADD04E935F6D /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4B059943DEF750CAC9F1D306067CA9 /* utility.h */; };
+		ED24C4CD39A8DAD0F01BEEB7A34D5516 /* tmpfileplus.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE383BB7FA9D2FF01F203595EFCD801 /* tmpfileplus.h */; };
+		EF00E7B78BEEA914E1F9957C8A9D2452 /* tmpfileplus.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 5DE383BB7FA9D2FF01F203595EFCD801 /* tmpfileplus.h */; };
+		F64EBB5A33FFDCEF8FEE1A5392B34AC9 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB319A0DED209EC0A62B2B12D338D7 /* queue.h */; };
+		F9A3AB57D3BE189C3EB635A255FC5291 /* shared_strings.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = DEC0647146CDB51BE79B9921E5B74727 /* shared_strings.h */; };
+		FAEFCE4736369432C581DE2905A9B31E /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 15544E89987467405EEA9EA0074B0AD6 /* zip.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		FB27D310553A698813E598D142FE91FF /* workbook.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 0BAAC08848F58AE593C30B77C2983AB5 /* workbook.h */; };
+		FF23A929DE1EB97967828318856208F9 /* theme.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 26D75DDC8434E072DB6662EAD5E827F5 /* theme.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A541F54C473E5CE4B422B85A1B64E21C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 006886F963A841C9C4A7FE92D738914E;
+			remoteInfo = libxlsxwriter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ABBCF3C2C8F3EAE47C374DE26657948D /* Copy xlsxwriter/third_party Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/xlsxwriter/third_party";
+			dstSubfolderSpec = 16;
+			files = (
+				0D630167C238DD85EC3A06E8D57E828E /* ioapi.h in Copy xlsxwriter/third_party Public Headers */,
+				1C6D60E76CF1848EF1D99C4E055ECC97 /* queue.h in Copy xlsxwriter/third_party Public Headers */,
+				EF00E7B78BEEA914E1F9957C8A9D2452 /* tmpfileplus.h in Copy xlsxwriter/third_party Public Headers */,
+				5172F613EB686A8784303D60B2703D84 /* tree.h in Copy xlsxwriter/third_party Public Headers */,
+				49BB07D5C654A4ABAD65FAA2511C00C4 /* zip.h in Copy xlsxwriter/third_party Public Headers */,
+			);
+			name = "Copy xlsxwriter/third_party Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82637E24C9E075C44975115C6D81B8F /* Copy . Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				7ADD0D1AF04F768CF76E052EAA15534A /* xlsxwriter.h in Copy . Public Headers */,
+			);
+			name = "Copy . Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B883E9F3BD7C335BD844F72243CE47 /* Copy xlsxwriter Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/xlsxwriter";
+			dstSubfolderSpec = 16;
+			files = (
+				13481BC619EED18964B5364EEFA56DF7 /* app.h in Copy xlsxwriter Public Headers */,
+				7280EC56EAA22A76AEAB9BA7A4632BFB /* chart.h in Copy xlsxwriter Public Headers */,
+				6EED5467EBAE893CEACBC8D61AEED7A0 /* common.h in Copy xlsxwriter Public Headers */,
+				B988339E5AB7FC57487285A8C75A72D0 /* content_types.h in Copy xlsxwriter Public Headers */,
+				8086BF30F5B1384198614A1F02AAA30C /* core.h in Copy xlsxwriter Public Headers */,
+				378D8BB6DE013BB177F4390DC5072BC8 /* custom.h in Copy xlsxwriter Public Headers */,
+				9890B37C93FE4638F8D420027D367EF1 /* drawing.h in Copy xlsxwriter Public Headers */,
+				7109787531E472F725D2C8AE8164A2D9 /* format.h in Copy xlsxwriter Public Headers */,
+				5B1039365175A6FB659F325B20BAD734 /* hash_table.h in Copy xlsxwriter Public Headers */,
+				6244F77B4007996D556193F575C0C70E /* libxlsxwriter-umbrella.h in Copy xlsxwriter Public Headers */,
+				22BC9E544458D25465244D227010EE9B /* packager.h in Copy xlsxwriter Public Headers */,
+				67638AC5AF48E4C312A6052232139CB2 /* relationships.h in Copy xlsxwriter Public Headers */,
+				F9A3AB57D3BE189C3EB635A255FC5291 /* shared_strings.h in Copy xlsxwriter Public Headers */,
+				31FF8BFF607A00B3E596E149E49EC68F /* styles.h in Copy xlsxwriter Public Headers */,
+				FF23A929DE1EB97967828318856208F9 /* theme.h in Copy xlsxwriter Public Headers */,
+				CE7CC960A5CD9E9BA3874651CD6CCD4F /* utility.h in Copy xlsxwriter Public Headers */,
+				FB27D310553A698813E598D142FE91FF /* workbook.h in Copy xlsxwriter Public Headers */,
+				E77A92224FED912D0BEAF5924204ECA6 /* worksheet.h in Copy xlsxwriter Public Headers */,
+				CEFD2D9CAFC28B25FA878846E28BABF3 /* xmlwriter.h in Copy xlsxwriter Public Headers */,
+			);
+			name = "Copy xlsxwriter Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0589350C2D874DDC412955F9A69D86F3 /* Pods-excel-example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-excel-example-umbrella.h"; sourceTree = "<group>"; };
+		08968D0F5F3D4A67CC355C69A21BA0A2 /* content_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = content_types.h; path = include/xlsxwriter/content_types.h; sourceTree = "<group>"; };
+		0BAAC08848F58AE593C30B77C2983AB5 /* workbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = workbook.h; path = include/xlsxwriter/workbook.h; sourceTree = "<group>"; };
+		1217836A76EF2FB554D6B7F91C122A16 /* tmpfileplus.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tmpfileplus.c; path = third_party/tmpfileplus/tmpfileplus.c; sourceTree = "<group>"; };
+		15544E89987467405EEA9EA0074B0AD6 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = third_party/minizip/zip.c; sourceTree = "<group>"; };
+		18562408C8151FA8CCD218A90EFFA41C /* workbook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = workbook.c; path = src/workbook.c; sourceTree = "<group>"; };
+		1A4B059943DEF750CAC9F1D306067CA9 /* utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utility.h; path = include/xlsxwriter/utility.h; sourceTree = "<group>"; };
+		1DDBD2224EE95A74B97CB0A243ACDE74 /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = common.h; path = include/xlsxwriter/common.h; sourceTree = "<group>"; };
+		221852BED20CA00F63F49E62D4344EE0 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = third_party/minizip/ioapi.c; sourceTree = "<group>"; };
+		22DB319A0DED209EC0A62B2B12D338D7 /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = include/xlsxwriter/third_party/queue.h; sourceTree = "<group>"; };
+		24BB94CB257BAECFBD5DA39FDE4F89D4 /* Pods-excel-example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-excel-example-dummy.m"; sourceTree = "<group>"; };
+		25CEB59336FD0A550AB6698A41414EA8 /* xlsxwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlsxwriter.h; path = include/xlsxwriter.h; sourceTree = "<group>"; };
+		26D75DDC8434E072DB6662EAD5E827F5 /* theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = theme.h; path = include/xlsxwriter/theme.h; sourceTree = "<group>"; };
+		2718ED22331C1A934E0F7612AE62460B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F9A75D98F9809ECA33BC25DB4F567D /* packager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = packager.h; path = include/xlsxwriter/packager.h; sourceTree = "<group>"; };
+		39336717E64C7198225331484179B2F2 /* custom.c */ = {isa = PBXFileReference; includeInIndex = 1; name = custom.c; path = src/custom.c; sourceTree = "<group>"; };
+		415C5E26C86FD7676687BBFA6E8C0FD8 /* theme.c */ = {isa = PBXFileReference; includeInIndex = 1; name = theme.c; path = src/theme.c; sourceTree = "<group>"; };
+		4178916E65A516231528B4FF9932E5CA /* custom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = custom.h; path = include/xlsxwriter/custom.h; sourceTree = "<group>"; };
+		42BF5659BB088053E3053286D84D59B5 /* relationships.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relationships.h; path = include/xlsxwriter/relationships.h; sourceTree = "<group>"; };
+		447E39D20159A8A05ACA7671B87B5203 /* hash_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash_table.h; path = include/xlsxwriter/hash_table.h; sourceTree = "<group>"; };
+		49A6383B637A88C6F47C54CBA1D2EE4A /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = include/xlsxwriter/format.h; sourceTree = "<group>"; };
+		4C15FCAA18EF3F74C6E02F35477DBA4C /* styles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = styles.h; path = include/xlsxwriter/styles.h; sourceTree = "<group>"; };
+		5BC7CD9C0E831DE549D07CE9B7576551 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = include/xlsxwriter/third_party/ioapi.h; sourceTree = "<group>"; };
+		5DE383BB7FA9D2FF01F203595EFCD801 /* tmpfileplus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tmpfileplus.h; path = include/xlsxwriter/third_party/tmpfileplus.h; sourceTree = "<group>"; };
+		5E2AF47E80E3D403EDC7164CA15EBCC9 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = include/xlsxwriter/third_party/zip.h; sourceTree = "<group>"; };
+		5ECC16AEEBD27A80EC452644B2674647 /* libxlsxwriter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libxlsxwriter-umbrella.h"; path = "include/xlsxwriter/libxlsxwriter-umbrella.h"; sourceTree = "<group>"; };
+		65135A66D8021E272C277253EEB7D0A7 /* Pods-excel-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-excel-example.release.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		664A8D4340021128673BCBD9DF397F4F /* drawing.c */ = {isa = PBXFileReference; includeInIndex = 1; name = drawing.c; path = src/drawing.c; sourceTree = "<group>"; };
+		69FB3A85393DA475348585E140B4BD34 /* Pods-excel-example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-excel-example-acknowledgements.plist"; sourceTree = "<group>"; };
+		70B867E4E5ED1601B180AD308E51B6D1 /* libxlsxwriter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libxlsxwriter.xcconfig; sourceTree = "<group>"; };
+		7B41E6109F83525E4CDE8C8C5E0AEEA8 /* core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = core.h; path = include/xlsxwriter/core.h; sourceTree = "<group>"; };
+		7CFA51208ABB83B4419459E6CF91659C /* hash_table.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hash_table.c; path = src/hash_table.c; sourceTree = "<group>"; };
+		7F04B6ACC2D5B8FDC21031DBC79689FF /* worksheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = worksheet.h; path = include/xlsxwriter/worksheet.h; sourceTree = "<group>"; };
+		873D098EF47B426E70DDFCD5D83F99CC /* packager.c */ = {isa = PBXFileReference; includeInIndex = 1; name = packager.c; path = src/packager.c; sourceTree = "<group>"; };
+		8A57191FD85B1DFA26E772B26AD25EE1 /* content_types.c */ = {isa = PBXFileReference; includeInIndex = 1; name = content_types.c; path = src/content_types.c; sourceTree = "<group>"; };
+		9111244ED31FE568895754797ADA9ADC /* libxlsxwriter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libxlsxwriter-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9438CDC471170060DFD4B464F764B1EF /* worksheet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = worksheet.c; path = src/worksheet.c; sourceTree = "<group>"; };
+		96193C08DF5A871A3642411DD95D225F /* xlsxwriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = xlsxwriter.framework; path = libxlsxwriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F5800520AB4C7BF58D86F80365C451 /* chart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chart.h; path = include/xlsxwriter/chart.h; sourceTree = "<group>"; };
+		9CCDF6CAE2BD4241ECB5C26F6EC9D823 /* relationships.c */ = {isa = PBXFileReference; includeInIndex = 1; name = relationships.c; path = src/relationships.c; sourceTree = "<group>"; };
+		9F8F5F9480D4AC8B292FD9CAE1D50836 /* format.c */ = {isa = PBXFileReference; includeInIndex = 1; name = format.c; path = src/format.c; sourceTree = "<group>"; };
+		A46E6DD53E41EDAD7EF448BFEDBFBA95 /* xmlwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = include/xlsxwriter/xmlwriter.h; sourceTree = "<group>"; };
+		AA7119A704F86635FBAC984A3A345410 /* shared_strings.c */ = {isa = PBXFileReference; includeInIndex = 1; name = shared_strings.c; path = src/shared_strings.c; sourceTree = "<group>"; };
+		AC5F45D65C11FA1B9624BADF67598784 /* Pods-excel-example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-excel-example-resources.sh"; sourceTree = "<group>"; };
+		AD88CC4DC948919338D472BCEE350B30 /* core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = core.c; path = src/core.c; sourceTree = "<group>"; };
+		B62DA0DE8A0DFD0EED0A215512817552 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6BD7DE0A33215686F29ED3BA4C62CE9 /* app.c */ = {isa = PBXFileReference; includeInIndex = 1; name = app.c; path = src/app.c; sourceTree = "<group>"; };
+		BAE73A61A2087A6F71F2D28F232A0F07 /* Pods-excel-example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-excel-example-frameworks.sh"; sourceTree = "<group>"; };
+		C2FF29AD3D50A684686375DDD048B903 /* Pods-excel-example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-excel-example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CFD1313C9B305A5E46166D87D273CB3A /* Pods_excel_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_excel_example.framework; path = "Pods-excel-example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19A72D4E2B0BCCEAE50726603D1AE5B /* libxlsxwriter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = libxlsxwriter.modulemap; sourceTree = "<group>"; };
+		D35A50EAC2BB3C853F9F2524C06C7614 /* styles.c */ = {isa = PBXFileReference; includeInIndex = 1; name = styles.c; path = src/styles.c; sourceTree = "<group>"; };
+		D5E6850699DD326071227199B080776C /* libxlsxwriter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libxlsxwriter-dummy.m"; sourceTree = "<group>"; };
+		DD97119C46629D999AF97277A8B95DDF /* utility.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utility.c; path = src/utility.c; sourceTree = "<group>"; };
+		DEC0647146CDB51BE79B9921E5B74727 /* shared_strings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = shared_strings.h; path = include/xlsxwriter/shared_strings.h; sourceTree = "<group>"; };
+		E61D6B5C72CA99839A12FA1EB640954D /* Pods-excel-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-excel-example.debug.xcconfig"; sourceTree = "<group>"; };
+		EA31ADEBF60878A9B58CF4EF0A8C61D2 /* drawing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = drawing.h; path = include/xlsxwriter/drawing.h; sourceTree = "<group>"; };
+		EA49E231C20DD01B1239B92AAE238E6F /* tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tree.h; path = include/xlsxwriter/third_party/tree.h; sourceTree = "<group>"; };
+		EC2420049AB8DB2D94CAB94BDD8AFF4E /* app.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = app.h; path = include/xlsxwriter/app.h; sourceTree = "<group>"; };
+		EF01B347539249BD1E78AF8033D87C80 /* xmlwriter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xmlwriter.c; path = src/xmlwriter.c; sourceTree = "<group>"; };
+		F7A1BD09D0CCB915DDF3AE6E0741CCAE /* chart.c */ = {isa = PBXFileReference; includeInIndex = 1; name = chart.c; path = src/chart.c; sourceTree = "<group>"; };
+		FC83F5066D758220B598D79BFA67DDB8 /* Pods-excel-example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-excel-example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E1F4BDC278768AAD4563ADEC466D99B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507FF0C5F5B345F5A69BAEBB68ED222C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0407703D9CB2E75B2A2FDD6E0BD10D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF5353A4BFA6F500D93ED228FB2980F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DA27F4D78B11E1C77525FC526854BE6 /* libxlsxwriter */ = {
+			isa = PBXGroup;
+			children = (
+				B6BD7DE0A33215686F29ED3BA4C62CE9 /* app.c */,
+				EC2420049AB8DB2D94CAB94BDD8AFF4E /* app.h */,
+				F7A1BD09D0CCB915DDF3AE6E0741CCAE /* chart.c */,
+				96F5800520AB4C7BF58D86F80365C451 /* chart.h */,
+				1DDBD2224EE95A74B97CB0A243ACDE74 /* common.h */,
+				8A57191FD85B1DFA26E772B26AD25EE1 /* content_types.c */,
+				08968D0F5F3D4A67CC355C69A21BA0A2 /* content_types.h */,
+				AD88CC4DC948919338D472BCEE350B30 /* core.c */,
+				7B41E6109F83525E4CDE8C8C5E0AEEA8 /* core.h */,
+				39336717E64C7198225331484179B2F2 /* custom.c */,
+				4178916E65A516231528B4FF9932E5CA /* custom.h */,
+				664A8D4340021128673BCBD9DF397F4F /* drawing.c */,
+				EA31ADEBF60878A9B58CF4EF0A8C61D2 /* drawing.h */,
+				9F8F5F9480D4AC8B292FD9CAE1D50836 /* format.c */,
+				49A6383B637A88C6F47C54CBA1D2EE4A /* format.h */,
+				7CFA51208ABB83B4419459E6CF91659C /* hash_table.c */,
+				447E39D20159A8A05ACA7671B87B5203 /* hash_table.h */,
+				221852BED20CA00F63F49E62D4344EE0 /* ioapi.c */,
+				5BC7CD9C0E831DE549D07CE9B7576551 /* ioapi.h */,
+				5ECC16AEEBD27A80EC452644B2674647 /* libxlsxwriter-umbrella.h */,
+				873D098EF47B426E70DDFCD5D83F99CC /* packager.c */,
+				30F9A75D98F9809ECA33BC25DB4F567D /* packager.h */,
+				22DB319A0DED209EC0A62B2B12D338D7 /* queue.h */,
+				9CCDF6CAE2BD4241ECB5C26F6EC9D823 /* relationships.c */,
+				42BF5659BB088053E3053286D84D59B5 /* relationships.h */,
+				AA7119A704F86635FBAC984A3A345410 /* shared_strings.c */,
+				DEC0647146CDB51BE79B9921E5B74727 /* shared_strings.h */,
+				D35A50EAC2BB3C853F9F2524C06C7614 /* styles.c */,
+				4C15FCAA18EF3F74C6E02F35477DBA4C /* styles.h */,
+				415C5E26C86FD7676687BBFA6E8C0FD8 /* theme.c */,
+				26D75DDC8434E072DB6662EAD5E827F5 /* theme.h */,
+				1217836A76EF2FB554D6B7F91C122A16 /* tmpfileplus.c */,
+				5DE383BB7FA9D2FF01F203595EFCD801 /* tmpfileplus.h */,
+				EA49E231C20DD01B1239B92AAE238E6F /* tree.h */,
+				DD97119C46629D999AF97277A8B95DDF /* utility.c */,
+				1A4B059943DEF750CAC9F1D306067CA9 /* utility.h */,
+				18562408C8151FA8CCD218A90EFFA41C /* workbook.c */,
+				0BAAC08848F58AE593C30B77C2983AB5 /* workbook.h */,
+				9438CDC471170060DFD4B464F764B1EF /* worksheet.c */,
+				7F04B6ACC2D5B8FDC21031DBC79689FF /* worksheet.h */,
+				25CEB59336FD0A550AB6698A41414EA8 /* xlsxwriter.h */,
+				EF01B347539249BD1E78AF8033D87C80 /* xmlwriter.c */,
+				A46E6DD53E41EDAD7EF448BFEDBFBA95 /* xmlwriter.h */,
+				15544E89987467405EEA9EA0074B0AD6 /* zip.c */,
+				5E2AF47E80E3D403EDC7164CA15EBCC9 /* zip.h */,
+				ED113B900709056C8FB008E42B895F29 /* Support Files */,
+			);
+			name = libxlsxwriter;
+			path = libxlsxwriter;
+			sourceTree = "<group>";
+		};
+		7763C201E3E9CD9BE51B6422F515EBB7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E184922E70BC2B09BBD33E30199FE0A2 /* Pods-excel-example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9DC4BF93116F3DAE43EAFD012D4AD62F /* Pods */,
+				9EA8E7F62ECD73E3D1E7721BFAE262F1 /* Products */,
+				7763C201E3E9CD9BE51B6422F515EBB7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9DC4BF93116F3DAE43EAFD012D4AD62F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DA27F4D78B11E1C77525FC526854BE6 /* libxlsxwriter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EA8E7F62ECD73E3D1E7721BFAE262F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFD1313C9B305A5E46166D87D273CB3A /* Pods_excel_example.framework */,
+				96193C08DF5A871A3642411DD95D225F /* xlsxwriter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E184922E70BC2B09BBD33E30199FE0A2 /* Pods-excel-example */ = {
+			isa = PBXGroup;
+			children = (
+				2718ED22331C1A934E0F7612AE62460B /* Info.plist */,
+				FC83F5066D758220B598D79BFA67DDB8 /* Pods-excel-example.modulemap */,
+				C2FF29AD3D50A684686375DDD048B903 /* Pods-excel-example-acknowledgements.markdown */,
+				69FB3A85393DA475348585E140B4BD34 /* Pods-excel-example-acknowledgements.plist */,
+				24BB94CB257BAECFBD5DA39FDE4F89D4 /* Pods-excel-example-dummy.m */,
+				BAE73A61A2087A6F71F2D28F232A0F07 /* Pods-excel-example-frameworks.sh */,
+				AC5F45D65C11FA1B9624BADF67598784 /* Pods-excel-example-resources.sh */,
+				0589350C2D874DDC412955F9A69D86F3 /* Pods-excel-example-umbrella.h */,
+				E61D6B5C72CA99839A12FA1EB640954D /* Pods-excel-example.debug.xcconfig */,
+				65135A66D8021E272C277253EEB7D0A7 /* Pods-excel-example.release.xcconfig */,
+			);
+			name = "Pods-excel-example";
+			path = "Target Support Files/Pods-excel-example";
+			sourceTree = "<group>";
+		};
+		ED113B900709056C8FB008E42B895F29 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B62DA0DE8A0DFD0EED0A215512817552 /* Info.plist */,
+				D19A72D4E2B0BCCEAE50726603D1AE5B /* libxlsxwriter.modulemap */,
+				70B867E4E5ED1601B180AD308E51B6D1 /* libxlsxwriter.xcconfig */,
+				D5E6850699DD326071227199B080776C /* libxlsxwriter-dummy.m */,
+				9111244ED31FE568895754797ADA9ADC /* libxlsxwriter-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/libxlsxwriter";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1087DC481625C3A464AF76432F256C2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DE1FB728AB50C50E8F82F2ACB1BBB1 /* app.h in Headers */,
+				4B543CEBAB72B942F256C692539FD41B /* chart.h in Headers */,
+				CF7AD08B9CC1E1217E4CA321FAD3A21F /* common.h in Headers */,
+				DFAFBD48BB98A3A1BC684A3348DAADEB /* content_types.h in Headers */,
+				A5CE8012E433971C404B401EDD9386EE /* core.h in Headers */,
+				CE8E5F315EE21D83A30A8A7A91CA54E1 /* custom.h in Headers */,
+				26027D1A4640D69020A700EE7557248C /* drawing.h in Headers */,
+				29A8DFC636C309DA92BB5AD05F07BD77 /* format.h in Headers */,
+				87741AF8F46EA32540C7CFABAA7C65D4 /* hash_table.h in Headers */,
+				A6836CAB1FFB47AFC284E15EA6F002F6 /* ioapi.h in Headers */,
+				A53019486B01BB3EA3A6E395A30C2478 /* libxlsxwriter-umbrella.h in Headers */,
+				1E64F359931B38313961BA46EB3BB8E6 /* packager.h in Headers */,
+				F64EBB5A33FFDCEF8FEE1A5392B34AC9 /* queue.h in Headers */,
+				8A48192CF76BA18C5749A7A4A80423A1 /* relationships.h in Headers */,
+				C9536F8432CEB9022AE5801066E39381 /* shared_strings.h in Headers */,
+				6FA2C1E036A421FD04F9EA969D9B042A /* styles.h in Headers */,
+				A1335BC9415F952DF82B0876F7C216F5 /* theme.h in Headers */,
+				ED24C4CD39A8DAD0F01BEEB7A34D5516 /* tmpfileplus.h in Headers */,
+				180D7D20028C3893652B4333FB7242BD /* tree.h in Headers */,
+				ECB9D1CC4EF9847CEA56ADD04E935F6D /* utility.h in Headers */,
+				599B9DC261AE37EC6808F3B5D6620DBD /* workbook.h in Headers */,
+				84EC6183B7C83F983B1F417400E15266 /* worksheet.h in Headers */,
+				AB04388CB80FE5EEC012BF38BE267EC8 /* xlsxwriter.h in Headers */,
+				983F45B7AD37BC2C12B0C6F0B5BC6511 /* xmlwriter.h in Headers */,
+				5418E46984326C34C0984DC7E6597F35 /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D8C08B43590354F256944641C728FA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025AC2374C0B9E07B24F51C9399D9DA7 /* Pods-excel-example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		006886F963A841C9C4A7FE92D738914E /* libxlsxwriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E4C5CB581524F3C8C2F11A6B93B654 /* Build configuration list for PBXNativeTarget "libxlsxwriter" */;
+			buildPhases = (
+				FB1625E46665F4FD111451BCD17884C5 /* Sources */,
+				CC0407703D9CB2E75B2A2FDD6E0BD10D /* Frameworks */,
+				1087DC481625C3A464AF76432F256C2A /* Headers */,
+				D82637E24C9E075C44975115C6D81B8F /* Copy . Public Headers */,
+				F4B883E9F3BD7C335BD844F72243CE47 /* Copy xlsxwriter Public Headers */,
+				ABBCF3C2C8F3EAE47C374DE26657948D /* Copy xlsxwriter/third_party Public Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libxlsxwriter;
+			productName = libxlsxwriter;
+			productReference = 96193C08DF5A871A3642411DD95D225F /* xlsxwriter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		629AE366B4CDC098BE061734FF2FB388 /* Pods-excel-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA1D783448663D1976A4126C11AB5AE /* Build configuration list for PBXNativeTarget "Pods-excel-example" */;
+			buildPhases = (
+				8B7D30F0E69309F464D646DAA0B54D7F /* Sources */,
+				3E1F4BDC278768AAD4563ADEC466D99B /* Frameworks */,
+				2D8C08B43590354F256944641C728FA8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82351D54221C3924EC8D010640D10F2E /* PBXTargetDependency */,
+			);
+			name = "Pods-excel-example";
+			productName = "Pods-excel-example";
+			productReference = CFD1313C9B305A5E46166D87D273CB3A /* Pods_excel_example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9EA8E7F62ECD73E3D1E7721BFAE262F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				006886F963A841C9C4A7FE92D738914E /* libxlsxwriter */,
+				629AE366B4CDC098BE061734FF2FB388 /* Pods-excel-example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B7D30F0E69309F464D646DAA0B54D7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E3BC25D8D5FD555531D820857C79BA /* Pods-excel-example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1625E46665F4FD111451BCD17884C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2B61FACEDD47033FB4CC0309A6E000 /* app.c in Sources */,
+				59CE8EF1B0A4C6D1F71C34455E4CCC8B /* chart.c in Sources */,
+				B82A2EF1B50420E8695AA4A9AEBFD0A6 /* content_types.c in Sources */,
+				A10407BB464FC8E79D42A0F54A3665FF /* core.c in Sources */,
+				70CD50132726F6B384C7ECA6AD9AE64C /* custom.c in Sources */,
+				2524093E1C730FA455EB12209C49C9DC /* drawing.c in Sources */,
+				797420230B647544633D580B39F4DF0E /* format.c in Sources */,
+				A5633915B1CC186CF8C6CADF6671F578 /* hash_table.c in Sources */,
+				D61E0F5FA3572D691F2A58055F67F9E5 /* ioapi.c in Sources */,
+				7D999183A7D58BA9B34916C1CC6D1470 /* libxlsxwriter-dummy.m in Sources */,
+				8CCFD1D24FE589878452B258C115A044 /* packager.c in Sources */,
+				8D1D75DBD90EE30EBCB969B84D439F0D /* relationships.c in Sources */,
+				2E34567460FA8780A1D950CAB15EA12E /* shared_strings.c in Sources */,
+				7DDE9DD1B2D3046255BECB9DB2545913 /* styles.c in Sources */,
+				DCE141D561AE16449D2AE21FB7139C06 /* theme.c in Sources */,
+				AA951872F3E5F9232E077A054C2F9617 /* tmpfileplus.c in Sources */,
+				221D43A596F7373EE86C73277BA8F2FD /* utility.c in Sources */,
+				D722147E515EBBF629B34016D9CAECEF /* workbook.c in Sources */,
+				0EAE2BA8AEB75ECCEAACA1B0E9759707 /* worksheet.c in Sources */,
+				C28981D488F0B4C7DA9022487617EA83 /* xmlwriter.c in Sources */,
+				FAEFCE4736369432C581DE2905A9B31E /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82351D54221C3924EC8D010640D10F2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libxlsxwriter;
+			target = 006886F963A841C9C4A7FE92D738914E /* libxlsxwriter */;
+			targetProxy = A541F54C473E5CE4B422B85A1B64E21C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		35E71925963C76918465372B719B5BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61D6B5C72CA99839A12FA1EB640954D /* Pods-excel-example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-excel-example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-excel-example/Pods-excel-example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		62079556F467DC48955FE18374498AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B867E4E5ED1601B180AD308E51B6D1 /* libxlsxwriter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libxlsxwriter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/libxlsxwriter/libxlsxwriter.modulemap";
+				PRODUCT_MODULE_NAME = xlsxwriter;
+				PRODUCT_NAME = xlsxwriter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65339E9DA2ED1E8485553570C5263D64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65135A66D8021E272C277253EEB7D0A7 /* Pods-excel-example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-excel-example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-excel-example/Pods-excel-example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A05F7E9AAE36278F7E25166E7491E30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B867E4E5ED1601B180AD308E51B6D1 /* libxlsxwriter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libxlsxwriter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/libxlsxwriter/libxlsxwriter.modulemap";
+				PRODUCT_MODULE_NAME = xlsxwriter;
+				PRODUCT_NAME = xlsxwriter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46E4C5CB581524F3C8C2F11A6B93B654 /* Build configuration list for PBXNativeTarget "libxlsxwriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62079556F467DC48955FE18374498AAC /* Debug */,
+				9A05F7E9AAE36278F7E25166E7491E30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA1D783448663D1976A4126C11AB5AE /* Build configuration list for PBXNativeTarget "Pods-excel-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E71925963C76918465372B719B5BF4 /* Debug */,
+				65339E9DA2ED1E8485553570C5263D64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

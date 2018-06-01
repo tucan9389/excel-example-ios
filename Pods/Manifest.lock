@@ -1,0 +1,16 @@
+PODS:
+  - libxlsxwriter (0.7.7)
+
+DEPENDENCIES:
+  - libxlsxwriter (~> 0.7.7)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - libxlsxwriter
+
+SPEC CHECKSUMS:
+  libxlsxwriter: d2048fab09a8812fb8b482210ccd3f902c788231
+
+PODFILE CHECKSUM: 9fb291ff183657206dc547c48f58ad680f3e62b8
+
+COCOAPODS: 1.5.0
